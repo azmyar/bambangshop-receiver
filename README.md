@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -91,3 +91,9 @@ This is the place for you to write reflections:
 2. In Rust, static variables and constants behave similarly, where both are read-only after initialization. This is part of Rust's effort to prioritize safety in multi-threading by limiting access to mutable data from multiple threads simultaneously. The purpose of this limitation is to prevent race condition and data race issues that can cause unexpected program behavior. As a solution, Rust allows mutation of data on static variables using immutable data structures, but still introduces locking mechanisms like RwLock and Mutex. Thus, data mutation can be done safely and coordinatedly.
 
 #### Reflection Subscriber-2
+
+1. After completing this module, I became interested in understanding the roles of various files not extensively explained in the tutorial. For example, I found that Cargo.toml acts as the main configuration file for a Rust project, allowing management of dependencies, project configuration, and clear definition of project metadata. Additionally, there is Rocket.toml, primarily used for specific Rocket framework configurations, such as server port settings, thread count, and logging level, but in this tutorial, it is only used to set the IP address and server port. Furthermore, lib.rs proved to be a file rich in main application configurations, including definition of global variables, basic application configuration structure, error handling, and usage of HTTP clients in the context of a Rust application using Rocket and requests.
+
+2. From this module, I realized that the Observer pattern can be a practical solution for handling the addition of more subscribers. This occurs due to the clear separation between Publisher and Observer, as well as message management between data owner and subscribers. However, adding subscribers to the system can increase code complexity and make the process not as immediate as when there is only one main application instance. Nevertheless, the benefits gained from flexibility and scalability can provide significant added value to the application.
+
+3. I have recently started exploring both of these features in Postman. Although I have not fully mastered the syntax of creating testing scripts, I have successfully implemented some testing scripts that I found from the internet. I found this feature very useful in conducting automated testing when testing server responses. Additionally, I also explored the API documentation feature in Postman by adding clear descriptions to each request. This allows me to see examples of the request body needed to call each request more efficiently.
